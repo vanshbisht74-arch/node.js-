@@ -31,7 +31,9 @@ fs.readFile('./text.txt','utf-8',(err,result)=>{
 fs.appendFileSync('./text.txt','Hey There')
 
 
-// //Deleting the File:-
-fs.unlinkSync('./delete.txt');
+// // //Deleting the File:-
+// fs.unlinkSync('./delete.txt');
 
+console.log(fs.statSync("./text.txt"))
+fs.mkdirSync("my-docs")
 
